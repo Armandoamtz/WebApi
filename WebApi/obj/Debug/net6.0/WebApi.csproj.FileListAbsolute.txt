@@ -59,3 +59,7 @@ C:\Users\mando\source\repos\WebApi\WebApi\obj\Debug\net6.0\refint\WebApi.dll
 C:\Users\mando\source\repos\WebApi\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\mando\source\repos\WebApi\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\mando\source\repos\WebApi\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\mando\source\repos\WebApi\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\mando\source\repos\WebApi\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\mando\source\repos\WebApi\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\mando\source\repos\WebApi\WebApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
