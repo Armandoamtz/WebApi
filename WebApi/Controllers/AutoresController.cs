@@ -5,7 +5,7 @@ using WebApi.Entidades;
 namespace WebApi.Controllers
 {
     [ApiController]
-    [Route("api/autores")]
+    [Route("api/autores")] // pai/autores => ruta
     public class AutoresController : ControllerBase
     {
         private readonly ApplicationDbContext context;
@@ -14,10 +14,18 @@ namespace WebApi.Controllers
             this.context = context;
         }
 
-        [HttpGet]
+        [HttpGet] // api/autores
+        [HttpGet("listado")] // api/autores/listado
+        [HttpGet("/listado")] // listado
         public async Task<ActionResult<List<Autor>>> Get()
         {
             return await context.Autores.Include(x => x.Libros).ToListAsync();
+        }
+
+        [HttpGet("{primero}")] // api/autores/primero
+        public async Task<ActionResult<Autor>> PrimerAutor()
+        {
+            return await context.Autores.FirstOrDefaultAsync();
         }
 
         [HttpPost]
