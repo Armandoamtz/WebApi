@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using WebApi.Validaciones;
 
 namespace WebApi.Entidades
 {
@@ -9,6 +10,7 @@ namespace WebApi.Entidades
 
         [Required(ErrorMessage = "El campo {0} es requerido.")]
         [StringLength(maximumLength: 5, ErrorMessage = "El campo {0} no puede tener mas de {1} caracteres.")]
+        [PrimeraLetraMayuscula]
         public string Nombre { get; set; }
 
         [Range(18, 100)]
